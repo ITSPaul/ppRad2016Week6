@@ -193,6 +193,7 @@
     <Compile Include="Models\ClubModel\ClubContext.cs" />
     <Compile Include="Models\ClubModel\ClubEvent.cs" />
     <Compile Include="Models\ClubModel\Members.cs" />
+    <Compile Include="Models\ClubModel\Student.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -205,6 +206,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Migrations\MigrationCmds.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\pprad301ClubsApp - FTP.pubxml" />

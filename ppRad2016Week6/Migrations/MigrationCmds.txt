@@ -1,0 +1,4 @@
+﻿add-Migration -ConfigurationTypeName ppRad2016Week6.Migrations.Configuration
+update-database -ConfigurationTypeName ppRad2016Week6.Migrations.Configuration
+
+update-database -ConfigurationTypeName ppRad2016Week6.Migrations.ClubModelMigrations.Configuration

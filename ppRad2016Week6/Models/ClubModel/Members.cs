@@ -12,9 +12,21 @@ namespace ppRad2016Week6.Models.ClubModel
     public class Member
     {   
         [Key,Column(Order =1)]
-        public Guid memberID { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int memberID { get; set; }
+
         [Key, Column(Order = 2)]
-        public Guid StudentID { get; set; }
+        [ForeignKey("club")]
+        public int ClubId { get; set; }
+
+
+        [Key, Column(Order = 3)]
+        [ForeignKey("student")]
+        public string StudentID { get; set; }
+
         public bool approved { get; set; }
+
+        public virtual Club club { get; set; }
+        public virtual Student student { get; set; }
     }
 }
